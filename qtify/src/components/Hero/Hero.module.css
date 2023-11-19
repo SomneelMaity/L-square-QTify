@@ -5,9 +5,5 @@
     height: 270px;
     background-color: var(--color-white);
     gap: 30px;
-    color: white;
+    /* color: white; */
 }
-/* 
-h1 {
-    color: white;
-} */
