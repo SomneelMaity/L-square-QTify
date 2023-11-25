@@ -14,12 +14,19 @@
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+
 body {
   background-color: var(--color-black);
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   color: var(--color-white);
+  overflow: hidden;
 }
 
 img, picture, video, canvas, svg {
@@ -31,3 +38,19 @@ input, button, textarea, select {
   font: inherit;
 }
 
+p,h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.swiper-slide {
+  width: auto !important;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
