@@ -7,13 +7,16 @@ import styles from "./HomePage.module.css";
 function HomePage(props) {
     const { data } = useOutletContext();
     const { topAlbums, newAlbums } = data;
-    return <>
+    return (
+      <>
         <Hero />
         <div className={styles.wrapper}>
-            <Section title="Top Albums" data={topAlbums} type="album" />
-            <Section title="New Albums" data={newAlbums} type="album" />
+          <Section title="Top Albums" data={topAlbums} type="album" />
+          <Section title="New Albums" data={newAlbums} type="album" />
+          <Section title="Songs" data={topAlbums} type="album" />
         </div>
-    </>;
+      </>
+    );
 }
 
 export default HomePage;
